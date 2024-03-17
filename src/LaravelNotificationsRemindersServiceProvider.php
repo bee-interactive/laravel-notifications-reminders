@@ -17,6 +17,7 @@ class LaravelNotificationsRemindersServiceProvider extends PackageServiceProvide
          */
         $package
             ->name('laravel-notifications-reminders')
+            ->publishesServiceProvider('LaravelNotificationsRemindersServiceProvider')
             ->hasConfigFile()
             ->hasMigration('create_laravel-notifications-reminders_table')
             ->hasInstallCommand(function (InstallCommand $command) {
