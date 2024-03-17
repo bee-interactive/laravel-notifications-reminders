@@ -2,9 +2,9 @@
 
 namespace BeeInteractive\LaravelNotificationsReminders;
 
+use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\LaravelPackageTools\Commands\InstallCommand;
 
 class LaravelNotificationsRemindersServiceProvider extends PackageServiceProvider
 {
