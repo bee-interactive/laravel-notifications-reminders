@@ -2,9 +2,9 @@
 
 namespace BeeInteractive\LaravelNotificationsReminders\Tests;
 
+use BeeInteractive\LaravelNotificationsReminders\LaravelNotificationsRemindersServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use BeeInteractive\LaravelNotificationsReminders\LaravelNotificationsRemindersServiceProvider;
 
 class TestCase extends Orchestra
 {
