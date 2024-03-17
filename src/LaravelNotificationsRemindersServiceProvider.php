@@ -19,12 +19,11 @@ class LaravelNotificationsRemindersServiceProvider extends PackageServiceProvide
             ->name('laravel-notifications-reminders')
             ->publishesServiceProvider('LaravelNotificationsRemindersServiceProvider')
             ->hasConfigFile()
-            ->hasMigration('create_laravel-notifications-reminders_table')
+            ->hasMigration('create_notifications_reminders_table')
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->publishConfigFile()
-                    ->publishMigrations()
-                    ->askToStarRepoOnGitHub('bee-interactive/laravel-notifications-reminders');
+                    ->publishMigrations();
             });
     }
 }
