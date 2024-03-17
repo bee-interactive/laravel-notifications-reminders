@@ -1,6 +1,5 @@
 <?php
 
-// config for BeeInteractive/LaravelNotificationsReminders
 return [
-
+    'table' => 'notifications_reminders'
 ];
