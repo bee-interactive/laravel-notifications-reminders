@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'table' => 'notifications_reminders'
+    'table' => 'notifications_reminders',
 ];
