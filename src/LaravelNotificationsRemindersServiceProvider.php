@@ -23,7 +23,10 @@ class LaravelNotificationsRemindersServiceProvider extends PackageServiceProvide
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->publishConfigFile()
-                    ->publishMigrations();
+                    ->publishMigrations()
+                    ->endWith(function (InstallCommand $command) {
+                        $command->info('The Laravel notifications reminders has been installed. Have a great day!');
+                    });
             });
     }
 }

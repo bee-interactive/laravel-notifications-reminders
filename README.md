@@ -17,17 +17,9 @@ You can install the package via composer:
 composer require bee-interactive/laravel-notifications-reminders
 ```
 
-You can publish and run the migrations with:
-
+Then, run the installer with:
 ```bash
-php artisan vendor:publish --tag="laravel-notifications-reminders-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-notifications-reminders-config"
+php artisan artisan notifications-reminders:install
 ```
 
 ## Usage
